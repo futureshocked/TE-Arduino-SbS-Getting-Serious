@@ -23,7 +23,7 @@
  * -----------
  *  To use the I2C interface:
  *  
- *  Arduino Uno   |     BME280
+ *  Arduino Uno   |     HMC5883
  *  ------------------------------
  *        5V      |       Vin
  *        GND     |       GND
