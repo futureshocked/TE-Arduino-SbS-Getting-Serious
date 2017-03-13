@@ -44,7 +44,7 @@
  *  It is possible to use any other digital pins in 
  *  order to implement the SPI interface.
  *  
- *  Created on November 21 2016 by Peter Dalmaris
+ *  Created on March 14 2017 by Peter Dalmaris
  * 
  */
 
