@@ -126,7 +126,7 @@ void loop(void)
   // Find yours here: http://www.magnetic-declination.com/
   // Mine is: -13* 2' W, which is ~13 Degrees, or (which we need) 0.22 radians
   // If you cannot find your Declination, comment out these two lines, your compass will be slightly off.
-  float declinationAngle = -0.99;
+  float declinationAngle = -0.21;
   heading += declinationAngle;
   
   // Correct for when signs are reversed.
