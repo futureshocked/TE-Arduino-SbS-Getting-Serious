@@ -11,14 +11,11 @@
  * Components
  * ----------
  *  - Arduino Uno
- *  - a door reed switch 
- *  - 5mm LED
- *  - 250 Ohm resistor for the LED
- *  - 20 kOhm resistor for the switch
+ *  - a good quality rotary encoder 
  *  
  *  Libraries
  *  ---------
- *  None
+ *  Encoder.h
  *
  * Connections
  * -----------
@@ -34,7 +31,7 @@
  *     
  * 
  *  
- *  Created on March 20 2017 by Peter Dalmaris
+ *  Created on March 21 2017 by Peter Dalmaris
  * 
  */
 
