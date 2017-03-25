@@ -60,7 +60,7 @@
 // Change these two numbers to the pins connected to your encoder.
 //   With ENCODER_DO_NOT_USE_INTERRUPTS, no interrupts are ever
 //   used, even if the pin has interrupt capability
-Encoder myEnc(2, 3);
+Encoder myEnc(5, 6);
 //   avoid using pins with LEDs attached
 
 void setup() {
@@ -79,5 +79,5 @@ void loop() {
   // With any substantial delay added, Encoder can only track
   // very slow motion.  You may uncomment this line to see
   // how badly a delay affects your encoder.
-  //delay(50);
+  delay(50);
 }

@@ -65,4 +65,5 @@ void loop() {
     oldPosition = newPosition;
     Serial.println(newPosition);
   }
+  delay(50);
 }
