@@ -38,7 +38,6 @@
  * -----------------
  *  For information on the LiquidCrystal library: https://github.com/marcoschwartz/LiquidCrystal_I2C
  *  For information on the OnewireKeypad library: https://github.com/AndrewMascolo/OnewireKeypad
- *  For information on the Keypad library: http://playground.arduino.cc/Code/Keypad
  *  
  *  Created on March 25 2017 by Peter Dalmaris
  * 

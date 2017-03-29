@@ -92,7 +92,7 @@
 
 LiquidCrystal_I2C lcd(0x27,16,2);
 
-int output, key_code, press_status = 0;
+int output, press_status = 0;
 char str[16] = {'1', 'A', '3', '2', '4', 'B', '6', '5', '7', 'C', '9', 
                 '8', '*', 'D', '#', '0'};
 void setup()
