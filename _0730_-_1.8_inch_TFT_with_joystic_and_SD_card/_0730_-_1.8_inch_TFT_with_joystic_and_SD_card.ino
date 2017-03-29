@@ -165,7 +165,7 @@ void loop() {
 
   }
   if ((b == BUTTON_SELECT)) {
-    tft.setTextColor(ST7735_RED, ST7735_BLACK );
+    tft.setTextColor(ST7735_RED, ST7735_WHITE );
     tft.setCursor(70, 20);
     tft.setTextSize(3);
     tft.print(position);
