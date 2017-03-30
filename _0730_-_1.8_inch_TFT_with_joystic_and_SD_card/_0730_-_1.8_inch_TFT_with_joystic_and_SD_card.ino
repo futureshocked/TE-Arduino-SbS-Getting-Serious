@@ -93,17 +93,11 @@ uint8_t spacing = 11;
 int position = 0; //this stores the position of the selection box
 
 // The following code is for debouncing the joystick and get more accurate readings from it
-// Variables will change:
-int ledState = HIGH;         // the current state of the output pin
-int buttonState;             // the current reading from the input pin
-int lastButtonState = LOW;   // the previous reading from the input pin
-
 // the following variables are unsigned long's because the time, measured in miliseconds,
 // will quickly become a bigger number than can be stored in an int.
 unsigned long lastDebounceTime = 0;  // the last time the output pin was toggled
 unsigned long debounceDelay = 500;    // the debounce time; increase if the output flickers
 /////// End of debouncing segment ////////////////
-
 
 void setup(void) {
   Serial.begin(9600);
@@ -118,12 +112,11 @@ void setup(void) {
     Serial.println("failed!");
     return;
   }
-  //    tft.bmpDraw("parrot.bmp", 0, 0);
+ 
   bmpDraw("tft18.bmp", 0, 0);
 
   //Starting position for the selector box
   tft.drawRect(10, 8, 50, selection_box_height, ST7735_RED);
-
   tft.setTextColor(ST7735_MAGENTA);
   tft.setTextSize(1);
   tft.setCursor(70, 10);
@@ -136,13 +129,13 @@ void loop() {
   tft.setTextSize(3);
   if (b == BUTTON_DOWN) {
     tft.drawRect(10, 8 + (selection_box_height  + spacing + position)* position, 50, selection_box_height, ST7735_WHITE);
+    
     if (position < 2)
       position += 1; // Add one to the position of the selection box
     else
       position = 3;
+    
     tft.drawRect(10, 8 + (selection_box_height  + spacing+ position)* position, 50, selection_box_height, ST7735_RED);
-
-
   }
   if (b == BUTTON_LEFT) {
     //    Do something here
@@ -151,6 +144,7 @@ void loop() {
   if (b == BUTTON_UP) {
 
     tft.drawRect(10, 8 + (selection_box_height  + spacing+ position)* position, 50, selection_box_height, ST7735_WHITE);
+    
     if (position > 1)
       position -= 1; // Add one to the position of the selection box
     else
@@ -171,8 +165,6 @@ void loop() {
     tft.print(position);
     Serial.print("Position: ");
     Serial.print(position);
-
-
   }
 
 }
@@ -185,15 +177,12 @@ uint8_t readButton(void) {
 
   if (a < 3.3)
   {
-
-
     if ((millis() - lastDebounceTime) > debounceDelay) {
       // whatever the reading is at, it's been there for longer
       // than the debounce delay, so take it as the actual current state:
 
-
       lastDebounceTime = millis();
-      //  Serial.print("Button read analog = ");
+      
       Serial.println(a);
       if (a < 0.2) return BUTTON_DOWN;
       if (a < 1.0) return BUTTON_RIGHT;
@@ -201,11 +190,8 @@ uint8_t readButton(void) {
       if (a < 2.0) return BUTTON_UP;
       if (a < 3.2) return BUTTON_LEFT;
       else return BUTTON_NONE;
-
-
     } else
       return BUTTON_NONE;
-
   }
 }
 

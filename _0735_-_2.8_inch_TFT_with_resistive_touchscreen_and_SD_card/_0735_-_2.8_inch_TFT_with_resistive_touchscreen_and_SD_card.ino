@@ -123,7 +123,7 @@ void loop() {
   p.y = map(p.y, TS_MINY, TS_MAXY, 0, tft.height());
   Serial.print(p.x); Serial.print(" "); Serial.println(p.y);
 
-  if (p.x < 270 && p.x > 210)
+  if (p.x < 280 && p.x > 210)
   {
     //Format the text for the button press notifications
     tft.setCursor(165, 120);
