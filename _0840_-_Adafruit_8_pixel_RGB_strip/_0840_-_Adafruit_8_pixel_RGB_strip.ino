@@ -1,3 +1,41 @@
+/*  Adafruit High Density Neopixel example sketch
+ * 
+ * This sketch shows you how to manipulate LEDs on an Adafruit High Density Neopixel.
+ * 
+ * 
+ * 
+ * Components
+ * ----------
+ *  - Arduino Uno
+ *  - Adafruit High Density Neopixel, with 8 LEDs
+ *  
+ *  
+ *  Libraries
+ *  ---------
+ *  - Adafruit_NeoPixel.h
+ *
+ * Connections
+ * -----------
+ *  
+ *  You will need to solder pins or wires to the dedicated pads on the Neopixel board.
+ *  
+ *  Neopixel    |     Arduino
+ *  -------------------------
+ *     GND      |      GND
+ *     DIN      |      6
+ *     5VDC     |      5V
+ *     GND      |      GND
+ *  
+ * 
+ * Other information
+ * -----------------
+ *  Adafruit Neopixels library: https://github.com/adafruit/Adafruit_NeoPixel/blob/master/Adafruit_NeoPixel.h
+ * 
+ *  
+ *  Created on April 4 (no joke) 2017 by Peter Dalmaris
+ * 
+ */
+
 #include <Adafruit_NeoPixel.h>
 
 
