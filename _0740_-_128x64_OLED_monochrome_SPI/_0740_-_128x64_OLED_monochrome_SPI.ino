@@ -34,9 +34,10 @@
  * 
  * Other information
  * -----------------
- *  For information on the U8g2lib library: https://github.com/olikraus/u8g2*  
+ *  For information on the U8g2lib library: https://github.com/olikraus/u8g2  
  *  Setup and reference for the library: https://github.com/olikraus/u8g2/wiki
  *  For available fonts, look here: https://github.com/olikraus/u8g2/tree/master/tools/font/build/single_font_files
+ *  Reference programming information for U8g2lib: https://github.com/olikraus/u8g2/wiki/u8g2reference#drawbox
  *  
  *  Created on April 1 (no joke) 2017 by Peter Dalmaris
  * 
@@ -96,7 +97,7 @@ void setup(void) {
   // Write some lines
   //u8g2.drawLine(x1,y1,x2,y2)
   u8g2.drawLine(0, 0, 0, 63);
-  u8g2.drawLine(0, 0, 128, 0);
+  u8g2.drawLine(0, 0, 127, 0);
   u8g2.drawLine(127, 0, 127, 63);
   u8g2.drawLine(0, 63, 127, 63);
   
