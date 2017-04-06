@@ -2,7 +2,7 @@
  * 
  * This sketch shows you how to manipulate LEDs on an Adafruit Neopixel RGBW 30 LED strip.
  * 
- * This sketch is based on the original example by Adafruit, with a few changes to 
+ * This sketch is based on the original strandtest example by Adafruit, with a few changes to 
  * make is easier to read.
  * 
  * Components
@@ -70,7 +70,7 @@ void loop() {
   colorWipe(strip.Color(255, 0, 0), 50); // Red
   colorWipe(strip.Color(0, 255, 0), 50); // Green
   colorWipe(strip.Color(0, 0, 255), 50); // Blue
-//colorWipe(strip.Color(0, 0, 0, 255), 50); // White RGBW
+  colorWipe(strip.Color(255, 255, 255), 50); // White RGBW
   // Send a theater pixel chase in...
   theaterChase(strip.Color(127, 127, 127), 50); // White
   theaterChase(strip.Color(127, 0, 0), 50); // Red
