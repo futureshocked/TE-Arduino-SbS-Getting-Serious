@@ -29,8 +29,9 @@
  *  Adafruit GXF library documentation: https://cdn-learn.adafruit.com/downloads/pdf/adafruit-gfx-graphics-library.pdf
  *  Adafruit Neomatrix library: https://github.com/adafruit/Adafruit_NeoMatrix
  *  Adafruit Neopixel library: https://github.com/adafruit/Adafruit_NeoPixel
+ *  Adafruit Neopixel Uberguide: https://learn.adafruit.com/adafruit-neopixel-uberguide
  *  
- *  Created on April 1 (no joke) 2017 by Peter Dalmaris
+ *  Created on April 4 2017 by Peter Dalmaris
  * 
  */
 
@@ -84,15 +85,15 @@ void setup() {
     matrix.setBrightness(40);
 
   // Fill the matrix with some random colors
-  matrix.fillScreen(colors[random(0, 6)]);
-  matrix.show();delay(200);
-  matrix.fillScreen(colors[random(0, 6)]);
-  matrix.show();delay(200);
-  matrix.fillScreen(colors[random(0, 6)]);
-  matrix.show();delay(200);
-
-  matrix.fillScreen(0);
-  matrix.show();delay(200);
+//  matrix.fillScreen(colors[random(0, 6)]);
+//  matrix.show();delay(200);
+//  matrix.fillScreen(colors[random(0, 6)]);
+//  matrix.show();delay(200);
+//  matrix.fillScreen(colors[random(0, 6)]);
+//  matrix.show();delay(200);
+//
+//  matrix.fillScreen(0);
+//  matrix.show();delay(200);
   
      // Draw pixels
   matrix.drawPixel(0, 0, colors[0]);
@@ -103,22 +104,22 @@ void setup() {
   matrix.show();delay(200);
   matrix.drawPixel(4, 7, colors[3]);
   matrix.show();delay(200);
-
-  // Draw lines
+//
+//  // Draw lines
   matrix.drawLine(1, 1, 3, 6, colors[4]);
   matrix.show();delay(200);
   matrix.drawLine(3, 1, 1, 6, colors[5]);
   matrix.show();delay(200);
-
-  // Draw box
+//
+//  // Draw box
   matrix.drawRect(1, 2, 3, 4, colors[6]);
   matrix.show();delay(200);
-
+//
   delay(2000);
   matrix.fillScreen(0);
   matrix.show();
-
-  // Draw pixels at random locations, random colors
+//
+//  // Draw pixels at random locations, random colors
   for (int i = 0; i < 50; i++)
   {
     matrix.drawPixel(random(0, 4), random(0, 7), colors[random(0, 6)]);

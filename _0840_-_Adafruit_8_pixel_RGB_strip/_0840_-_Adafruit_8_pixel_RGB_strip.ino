@@ -1,4 +1,4 @@
-/*  Adafruit High Density Neopixel example sketch
+/*  0840 - Adafruit High Density Neopixel example sketch
  * 
  * This sketch shows you how to manipulate LEDs on an Adafruit High Density Neopixel.
  * 
@@ -25,14 +25,18 @@
  *     DIN      |      6
  *     5VDC     |      5V
  *     GND      |      GND
+ *     
+ *  Include a 500 Ohm resistor between DIN on the Neopixel and pin 6 on the Arduino.
+ *  Add a 1000 uF capacitor (or close to that value) between the GND and 5V pin on the
+ *  Neopixel (observe the polarities!).
  *  
  * 
  * Other information
  * -----------------
- *  Adafruit Neopixels library: https://github.com/adafruit/Adafruit_NeoPixel/blob/master/Adafruit_NeoPixel.h
- * 
+ *  Adafruit Neopixels library: https://github.com/adafruit/Adafruit_NeoPixel
+ *  How to connect: https://learn.adafruit.com/adafruit-neopixel-uberguide/basic-connections
  *  
- *  Created on April 4 (no joke) 2017 by Peter Dalmaris
+ *  Created on April 4 2017 by Peter Dalmaris
  * 
  */
 
