@@ -5,7 +5,6 @@
  * amount of time in minutes and seconds that has elapsed since the
  * sketch started running on the Arduino.
  * 
- * The sketch causes the LEDs to light up randomly.
  * 
  * This sketch was written by Peter Dalmaris for Arduino Step by Step.
  * 
