@@ -55,7 +55,7 @@ void setup() {
   byte hardwareConfig = COMMON_CATHODE; 
   
   sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments);
-  sevseg.setBrightness(90);
+//  sevseg.setBrightness(90);
 }
 
 void loop() {

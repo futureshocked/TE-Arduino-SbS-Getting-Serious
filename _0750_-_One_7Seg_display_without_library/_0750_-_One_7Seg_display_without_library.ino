@@ -69,7 +69,7 @@ void setup() {
   pinMode(segmentPins[6], OUTPUT);
   pinMode(segmentPins[7], OUTPUT);
   
-//  writeLeds(symbols[0]);    //Use this line to test a bit pattern
+//  writeLeds(symbols[2]);    //Use this line to test a bit pattern
 }
 
 void loop() {

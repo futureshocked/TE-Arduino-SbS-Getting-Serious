@@ -61,7 +61,7 @@ const int dataPin = 8;
 const byte CHAR_COUNT = 11;
 const byte symbols[CHAR_COUNT] = {
 //GFEDCBAd
- B01111110, // 0
+ B01101100, // | |
  B00001100, // 1
  B10110110, // 2 
  B10011110, // 3
@@ -82,11 +82,11 @@ void setup() {
   pinMode(dataPin, OUTPUT);  
   pinMode(clockPin, OUTPUT);
   Serial.begin(9600);
-//  writeLeds(symbols[0]);  //Use this line to test a bit pattern
+  writeLeds(symbols[0]);  //Use this line to test a bit pattern
 }
 
 void loop() {
-  pattern1();
+//  pattern1();
 }
 
 void pattern1()

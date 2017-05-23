@@ -57,7 +57,7 @@ void setup() {
   byte hardwareConfig = COMMON_CATHODE; 
   
   sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments);
-  sevseg.setBrightness(1000);
+//  sevseg.setBrightness(1000);
 }
 
 void loop() {
@@ -67,6 +67,8 @@ void loop() {
 
   if (timer == 100000)
   timer = 0;
+
+  delay(2);
   
   sevseg.refreshDisplay(); // Must run repeatedly
 }

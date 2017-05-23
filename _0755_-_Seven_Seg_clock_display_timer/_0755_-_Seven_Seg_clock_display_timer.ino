@@ -11,7 +11,7 @@
  * Components
  * ----------
  *  - Arduino Uno
- *  - 5 x 330 Ohm resistor for the 4 digits and 1 divider
+ *  - 5 x 330 Ohm resistor for the 4 digits and 1 colon
  *  - Breadboard
  *  - Jumper wires
  *  
@@ -61,7 +61,7 @@ void setup() {
   byte numDigits = 4;   
   byte digitPins[] = {2, 3, 4, 5};
   byte segmentPins[] = {6, 7, 8, 9, 10, 11, 12, 13};
-  bool resistorsOnSegments = false; // Use 'true' if on digit pins
+  bool resistorsOnSegments = false; // Use 'false' if on digit pins
   byte hardwareConfig = COMMON_ANODE; // See README.md for options
   
   sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments);
