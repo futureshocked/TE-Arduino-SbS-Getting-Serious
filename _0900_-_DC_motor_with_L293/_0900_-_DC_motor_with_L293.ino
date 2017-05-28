@@ -32,7 +32,9 @@
  *           |   +12V  --> 5V power supply 
  *           |   GND   --> GND power supply
  *     
- * 
+ * More information
+ * ----------------
+ * L298N datasheet: http://www.ti.com/lit/ds/symlink/l293.pdf
  *  
  *  Created on May 28 2017 by Peter Dalmaris
  * 
@@ -58,20 +60,20 @@ void setup()
 void loop() 
 { 
     digitalWrite(direction1,direction);   // Direction control motor 1
-    digitalWrite(direction2,direction);   // Direction control motor 2
-    analogWrite(speed1, 50);              // PWM Speed Control motor 1
-    analogWrite(speed2, 150);             // PWM Speed Control motor 2
-    delay(1000); 
-    analogWrite(speed1, 100);             // PWM Speed Control motor 1
-    analogWrite(speed1, 200);             // PWM Speed Control motor 2
-    delay(1000); 
-    analogWrite(speed1, 150);             // PWM Speed Control motor 1
-    analogWrite(speed1, 255);             // PWM Speed Control motor 2
-    delay(1000); 
-    
-    direction = !direction;               // Switch direction
-    analogWrite(speed1, 0);               // Stop motor 1 before starting again in the opposite direction
-    analogWrite(speed2, 0);               // Stop motor 2 before starting again in the opposite direction
+//    digitalWrite(direction2,direction);   // Direction control motor 2
+    analogWrite(speed1, 205);              // PWM Speed Control motor 1
+//    analogWrite(speed2, 150);             // PWM Speed Control motor 2
+//    delay(1000); 
+//    analogWrite(speed1, 100);             // PWM Speed Control motor 1
+//    analogWrite(speed1, 200);             // PWM Speed Control motor 2
+//    delay(1000); 
+//    analogWrite(speed1, 150);             // PWM Speed Control motor 1
+//    analogWrite(speed1, 255);             // PWM Speed Control motor 2
+//    delay(1000); 
+//    
+//    direction = !direction;               // Switch direction
+//    analogWrite(speed1, 0);               // Stop motor 1 before starting again in the opposite direction
+//    analogWrite(speed2, 0);               // Stop motor 2 before starting again in the opposite direction
 }
 
 

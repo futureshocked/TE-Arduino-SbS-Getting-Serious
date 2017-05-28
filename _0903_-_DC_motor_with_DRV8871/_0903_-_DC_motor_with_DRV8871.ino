@@ -1,6 +1,6 @@
-/*  0900 - simple DC motor control with the L293 controller IC
+/*  0903 - simple DC motor control with the DRV8871 controller IC
  * 
- * This sketch shows you how to control a small 5V DC motor using the L298N controller
+ * This sketch shows you how to control a small 5V DC motor using the DRV8871 controller
  * breakout.
  * 
  * The sketch speeds up the motor in three steps towards one direction,
@@ -10,7 +10,7 @@
  * Components
  * ----------
  *  - Arduino Uno
- *  - a L298N motor controller breakout
+ *  - a DRV8871 motor controller breakout
  *  - a small 5V DC motor
  *  
  *  Libraries
@@ -20,15 +20,15 @@
  * Connections
  * -----------
  *  
- * Arduino   |   L298N 
+ * Arduino   |   DRV8871 
  * ---------------------
  *   GND     |   GND
  *   5       |   IN1
  *   4       |   IN2
- *           |   OUT1  --> Motor wire 1
- *           |   OUT2  --> Motor wire 2
- *           |   +12V  --> 5V power supply 
- *           |   GND   --> GND power supply
+ *           |   MOTOR1 --> Motor wire 1
+ *           |   MOTOR1 --> Motor wire 2
+ *           |   POWER+ --> 5V power supply 
+ *           |   POWER- --> GND power supply
  *     
  * 
  *  
