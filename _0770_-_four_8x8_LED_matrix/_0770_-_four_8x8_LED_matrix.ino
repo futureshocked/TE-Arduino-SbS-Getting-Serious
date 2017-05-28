@@ -84,7 +84,7 @@ int smiley[total_pixels_in_smiley][total_coordinates_per_pixel] =
 void setup() {
   matrix.setIntensity(4); // Set brightness between 0 and 15
   matrix.fillScreen(LOW); // Clear the screen
-// Adjust to your own needs
+//// Adjust to your own needs
   matrix.setPosition(3, 0, 0); // The first display is at <0, 0>
   matrix.setPosition(2, 1, 0); // The second display is at <1, 0>
   matrix.setPosition(1, 2, 0); // The third display is at <2, 0>
@@ -162,7 +162,7 @@ matrix.write(); // Send bitmap to display
 void loop() {
 
 //  animate_pixel();  //Animate a single pixel
-//animate_letter();   //Animate a character
+animate_letter();   //Animate a character
 }
 
 void animate_letter(){

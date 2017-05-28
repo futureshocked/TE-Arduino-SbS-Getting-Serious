@@ -83,15 +83,8 @@ int smiley[total_pixels_in_smiley][total_coordinates_per_pixel] =
 void setup() {
   matrix.setIntensity(4); // Set brightness between 0 and 15
   matrix.fillScreen(LOW); // Clear the screen
-// Adjust to your own needs
-//  matrix.setPosition(0, 0, 0); // The first display is at <0, 0>
-//  matrix.setPosition(1, 1, 0); // The second display is at <1, 0>
-//  matrix.setPosition(2, 2, 0); // The third display is at <2, 0>
-//  matrix.setPosition(3, 3, 0); // And the last display is at <3, 0>
-//  ...
-//  matrix.setRotation(0, 2);    // The first display is position upside down
-//  matrix.setRotation(3, 2);    // The same hold for the last display
-  //               x  y
+//                 x, y, color
+//  matrix.drawPixel(0, 7, HIGH);
 
 //  // LEFT EYE
 //  matrix.drawPixel(1, 0, HIGH);
@@ -138,7 +131,7 @@ void setup() {
 //Draw a box
 //              x, y, w, h, color
 //matrix.drawRect(0, 0, 8, 8, HIGH);
-//matrix.fillRect(0, 0, 8, 8, HIGH);
+//matrix.fillRect(0, 0, 6, 5, HIGH);
 
 //Draw a circle
 //                x, y, r, color
@@ -147,14 +140,13 @@ void setup() {
 
 //Draw a letter
 //              x, y, char, clr, bg, size
-//matrix.drawChar(0, 0, 'A', HIGH, LOW, 1);
+//matrix.drawChar(0, 0, 'a', HIGH, LOW, 1);  
 
 matrix.write(); // Send bitmap to display
 }
 
 void loop() {
-
-//  animate_pixel();
+  animate_pixel();
 }
 
 void animate_pixel(){
@@ -166,7 +158,7 @@ for (int x_pixel_loc=0; x_pixel_loc<8; x_pixel_loc++)
 {
   matrix.drawPixel(x_pixel_loc, 3, HIGH);
   matrix.write();
-  delay(50);
+  delay(20);
   matrix.drawPixel(x_pixel_loc, 3, LOW);
   matrix.write();
 }
@@ -174,7 +166,7 @@ for (int x_pixel_loc=7; x_pixel_loc>-1; x_pixel_loc--)
 {
   matrix.drawPixel(x_pixel_loc, 3, HIGH);
   matrix.write();
-  delay(50);
+  delay(60);
   matrix.drawPixel(x_pixel_loc, 3, LOW);
   matrix.write();
 }

@@ -28,7 +28,7 @@
  *        
  *  Other information
  *  ------------------
- *  For more info on the TIP122, see https://www.onsemi.com/pub/Collateral/TIP120-D.PDF
+ *  For more info on the TIP122, see http://www.farnell.com/datasheets/1690291.pdf?_ga=2.252195084.467612952.1495583474-528894072.1495583474
  *  
  *  Created on May 23 2017 by Peter Dalmaris
  * 
