@@ -35,7 +35,6 @@
  */
 
 #include <Adafruit_MotorShield.h>
-#include "utility/Adafruit_MS_PWMServoDriver.h"
 
 // Create the motor shield object with the default I2C address
 Adafruit_MotorShield AFMS = Adafruit_MotorShield(); 
@@ -52,20 +51,20 @@ void setup() {
 }
 
 void loop() {
-  motor1->run(FORWARD); // Run forward for half a second
-  motor1->setSpeed(50); 
+//  motor1->run(FORWARD); // Run forward for half a second
+//  motor1->setSpeed(50); 
   motor2->run(FORWARD); // Run forward for half a second
-  motor2->setSpeed(150); 
-  delay(500);
-  motor1->run(RELEASE); // Run in idle for half a second
+  motor2->setSpeed(255); 
+  delay(4000);
+//  motor1->run(RELEASE); // Run in idle for half a second
   motor2->run(RELEASE); // Run in idle for half a second
   delay(500);
-  motor1->run(BACKWARD); // Run backward for half a second
-  motor1->setSpeed(50); 
+//  motor1->run(BACKWARD); // Run backward for half a second
+//  motor1->setSpeed(50); 
   motor2->run(BACKWARD); // Run backward for half a second
-  motor2->setSpeed(150); 
-  delay(500);
-  motor1->run(RELEASE); // Run in idle for half a second
+  motor2->setSpeed(255); 
+  delay(4000);
+//  motor1->run(RELEASE); // Run in idle for half a second
   motor2->run(RELEASE); // Run in idle for half a second
   delay(500);
 }

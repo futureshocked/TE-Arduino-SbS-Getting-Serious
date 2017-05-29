@@ -30,7 +30,10 @@
  *           |   POWER+ --> 5V power supply 
  *           |   POWER- --> GND power supply
  *     
- * 
+ * More information:
+ *
+ * More about the Adafruit DRV8871: https://www.adafruit.com/product/3190
+ * DRV8871 datasheet: http://www.ti.com/lit/ds/symlink/drv8871.pdf
  *  
  *  Created on May 28 2017 by Peter Dalmaris
  * 
