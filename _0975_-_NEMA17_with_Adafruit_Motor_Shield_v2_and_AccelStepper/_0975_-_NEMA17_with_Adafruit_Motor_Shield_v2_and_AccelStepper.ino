@@ -1,10 +1,8 @@
-/*  0972 - NEMA17 JK42HS40 stepper motor with Adafruit Motor Shield v2 and AccelStepper
+/*  0975 - NEMA17 JK42HS40 stepper motor with Adafruit Motor Shield v2 and AccelStepper
  * 
  * This sketch shows how to use the JK42HS40 stepper motor with Adafruit Motor 
  * Shield v2 and AccelStepper. It will make the motor move clockwise and anti-clock wise.
  * 
- * 
- *  
  * 
  * Components
  * ----------
@@ -41,6 +39,8 @@
 #include <Wire.h>
 #include <Adafruit_MotorShield.h>
 
+#define MICROSTEPS 8   // The default setting for MICROSTEPS is 16
+
 // Create the motor shield object with the default I2C address
 Adafruit_MotorShield AFMS = Adafruit_MotorShield(); 
 // Or, create it with a different I2C address (say for stacking)
@@ -70,7 +70,8 @@ void setup()
   //AFMS.begin(1000);  // OR with a different frequency, say 1KHz
 
   Astepper1.setMaxSpeed(1000);
-  Astepper1.setAcceleration(100);
+  Astepper1.setAcceleration(200);
+  Astepper1.setSpeed(1000);
   Astepper1.moveTo(pos);
 }
 

@@ -46,12 +46,11 @@
 void setup() {                
   pinMode(direction_pin, OUTPUT);     
   pinMode(step_pin, OUTPUT);
-  digitalWrite(direction_pin, LOW);
-  digitalWrite(step_pin, LOW);
 }
 
 void loop() {
-  digitalWrite(direction_pin, LOW);  
+  digitalWrite(direction_pin, LOW);  // Spin direction (lets say "clockwise", it depends
+                                     // on how you connected the coils.)
 
   //Move the shaft 1600 microsteps towards one direction.
   //By default, the Easydrivers uses 1/8th microsteps. This means that it generates 8
@@ -63,12 +62,12 @@ void loop() {
     //To execute a step (or in this case, a microstep), toggle the step_pin HIGH/LOW.
     //You can control the speed by the amount of delay you insert in the toggle.
     digitalWrite(step_pin, HIGH);
-    delayMicroseconds(200);       // Use delayMicroseconds instead of "delay" in order
+    delayMicroseconds(100);       // Use delayMicroseconds instead of "delay" in order
                                   // to make the motor move faster.
     digitalWrite(step_pin, LOW); 
-    delayMicroseconds(200);          
+    delayMicroseconds(100);          
   }
-  digitalWrite(direction_pin, HIGH);  
+  digitalWrite(direction_pin, HIGH);  // Spin in the oppisite direction
 
   //Move the shaft 1600 microsteps towards the opposite direction.
   for (int i=0;i<1600;i++)

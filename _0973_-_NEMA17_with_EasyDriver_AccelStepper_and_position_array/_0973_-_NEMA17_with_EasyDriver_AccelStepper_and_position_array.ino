@@ -41,7 +41,7 @@
 #include <AccelStepper.h>
 
 int direction_pin = 8;
- int step_pin      = 9;
+int step_pin      = 9;
 
 int current_position = 0; // We'll use this variable to keep track of the current position
 int total_positions = 6;  // Total positions in the positions_to_go array.
@@ -70,7 +70,7 @@ void loop()
     Serial.println(current_position);
     stepper.moveTo(positions_to_go[current_position++]); // Go back to the opposite position  
   }
-    stepper.run();  
+  stepper.run();  
     
     if (current_position == total_positions)     // If motor has visited all positions, reset
       {  current_position = 0;                  // the counter

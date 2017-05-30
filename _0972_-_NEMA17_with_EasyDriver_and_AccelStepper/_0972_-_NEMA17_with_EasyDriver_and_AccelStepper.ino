@@ -1,12 +1,13 @@
 /*  0972 - NEMA17 JK42HS40 stepper motor with Easydriver and AccelStepper
  * 
  * 
+ * This sketch shows how to control a JK42HS40 stepper motor using the 
+ * EasyDriver. In this sketch, we use the AccelStepper library in order
+ * to not block the rest of the sketch while the rotor is moving.
  * 
+ * The sketch spins up the motor towards one direction, and then towards 
+ * the other.
  * 
- * 
- * 
- * 
- *  
  * 
  * Components
  * ----------
@@ -45,24 +46,24 @@
 #include <AccelStepper.h>
 
 int direction_pin = 8;
- int step_pin      = 9;
+int step_pin      = 9;
  
 // Define a stepper and the pins it will use
-AccelStepper stepper( AccelStepper::DRIVER, step_pin, direction_pin);
+AccelStepper stepper(AccelStepper::DRIVER, step_pin, direction_pin);
 
-int pos = 50000;
+int pos = 5000;
 
 void setup()
 {  
   stepper.setMaxSpeed(5000);
-  stepper.setAcceleration(5000);
+  stepper.setAcceleration(1000);
+  stepper.setSpeed(5000);
 }
 
 void loop()
 {
   if (stepper.distanceToGo() == 0)
-  {
-    stepper.setSpeed(5000);
+  {    
     delay(500);
     pos = -pos;
     stepper.moveTo(pos);
