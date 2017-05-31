@@ -1,3 +1,39 @@
+/*  0945 - Servo motor demo using the Adafruit Servo Shield
+ * 
+ * This sketch shows you how to control two small 5V DC motors using the Adafruit Motor Shield V2.
+ * 
+ * The sketch speeds up the motor in three steps towards one direction,
+ * and then does the same in the other direction.
+ * 
+ * 
+ * Components
+ * ----------
+ *  - Arduino Uno
+ *  - One or two hobby servo motors
+ *  - The Adafruit Servo Shield
+ *  
+ *  Libraries
+ *  ---------
+ *  - Wire (comes with the Arduino IDE)
+ *  - Adafruit_PWMServoDriver
+ *
+ * Connections
+ * -----------
+ *  
+ * For the motors:
+ * Connect the motors to the first two servo positions.
+ * Connect 5V external power to the power screw terminals (observe the polarity!).
+ * 
+ * 
+ *     
+ *  More information
+ *  ----------------
+ *  For more information on the Adafruit_PWMServoDriver library, see https://github.com/adafruit/Adafruit-PWM-Servo-Driver-Library
+ *  For more information on the Adafruit Servo Shield: http://www.adafruit.com/products/815
+ *  
+ *  Created on May 29 2017 by Peter Dalmaris
+ * 
+ */
 /*************************************************** 
   This is an example for our Adafruit 16-channel PWM & Servo driver
   Servo test - this will drive 16 servos, one after the other
@@ -31,9 +67,6 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 #define SERVOMIN  120 // this is the 'minimum' pulse length count (out of 4096)
 #define SERVOMAX  560 // this is the 'maximum' pulse length count (out of 4096)
 
-// our servo # counter
-uint8_t servonum = 0;
-
 void setup() {
   Serial.begin(9600);
   Serial.println("16 channel Servo test!");
@@ -47,14 +80,14 @@ void loop() {
   // Drive each servo one at a time
   Serial.println(servonum);
   for (uint16_t pulselen = SERVOMIN; pulselen < SERVOMAX; pulselen++) {
-    pwm.setPWM(servonum, 0, pulselen);
+    pwm.setPWM(1, 0, pulselen);
+    pwm.setPWM(2, 0, pulselen);
   }
   delay(500);
   for (uint16_t pulselen = SERVOMAX; pulselen > SERVOMIN; pulselen--) {
-    pwm.setPWM(servonum, 0, pulselen);
+    pwm.setPWM(1, 0, pulselen);
+    pwm.setPWM(2, 0, pulselen);
   }
   delay(500);
 
-  servonum ++;
-  if (servonum > 1) servonum = 0;
 }

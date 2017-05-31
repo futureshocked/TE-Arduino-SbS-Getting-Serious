@@ -56,10 +56,10 @@ AccelStepper stepper1(AccelStepper::FULL4WIRE, motorPin1, motorPin3, motorPin2, 
 
 void setup()
 {  
-   stepper1.setMaxSpeed(700);  // You can work out these values for your stepper motor via
+   stepper1.setMaxSpeed(500);  // You can work out these values for your stepper motor via
                                // trial and error.
-   stepper1.setSpeed(700);     // This speed seems to work well for the 28BYJ-48 stepper
-   stepper1.setAcceleration(500.0);  // This value gives quick acceleration to the set speed
+   stepper1.setSpeed(500);     // This speed seems to work well for the 28BYJ-48 stepper
+   stepper1.setAcceleration(400.0);  // This value gives quick acceleration to the set speed
    stepper1.setCurrentPosition(0);   // This is the position where the motor happens to find
                                      // itself when the sketch starts.
    stepper1.moveTo(position_to_go);  // The first position for the motor to move to
