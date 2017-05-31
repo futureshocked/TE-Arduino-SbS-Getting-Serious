@@ -1,6 +1,7 @@
 /*  0940 - Simple continuous rotation servo motor demo
  * 
- * This sketch shows you how to control a continuous rotation 5V servo motors connected directly to the Arduino.
+ * This sketch shows you how to control a continuous rotation 5V servo motor 
+ * connected directly to the Arduino.
  * 
  * The sketch makes the servo's arm move continuisly in different speeds.
  * 
@@ -40,29 +41,24 @@
 
 #include <Servo.h> 
  
-Servo myservo1             // create servo object to control a servo 
+Servo myservo;             // create servo object to control a servo 
                            // a maximum of eight servo objects can be created 
  
 void setup() 
 { 
-  myservo1.attach(9);  // attaches the servo on pin 9 to the servo object 
+  myservo.attach(9);  // attaches the servo on pin 9 to the servo object 
 } 
- 
  
 void loop() 
 { 
+// Uncomment the following lines, one at a time, to see the effect that each one
+// has on the speed and direction of a continuous rotation servo.
+
   myservo.write(90);    // At this position, the servo does not move. 90 degrees is the resting value
-  delay(500);
-  myservo.write(100);   // At this position, the servo will move slowly clockwise
-  delay(500);
-  myservo.write(145);   // At this position, the servo will move faster clockwise
-  delay(500);
-  myservo.write(180);   // At this position, the servo will move at max speed clockwise
-  delay(500);
-  myservo.write(80);    // At this position, the servo will move at slowly anti-clockwise
-  delay(500);
-  myservo.write(70);    // At this position, the servo will move at faster anti-clockwise
-  delay(500);
-  myservo.write(0);     // At this position, the servo will move at max speed anti-clockwise
-  delay(1000); //Wait for a sec
+//  myservo.write(100);   // At this position, the servo will move slowly clockwise
+//  myservo.write(145);   // At this position, the servo will move faster clockwise
+//  myservo.write(180);   // At this position, the servo will move at max speed clockwise
+//  myservo.write(80);    // At this position, the servo will move at slowly anti-clockwise
+//  myservo.write(70);    // At this position, the servo will move at faster anti-clockwise
+//  myservo.write(0);     // At this position, the servo will move at max speed anti-clockwise
 } 

@@ -9,7 +9,7 @@
  * Components
  * ----------
  *  - Arduino Uno
- *  - One or two hobby servo motors
+ *  - One or two hobby servo motors (you can also experiment with a Continuous Rotation Servo, CRS)
  *  - The Adafruit Servo Shield
  *  
  *  Libraries
@@ -64,13 +64,21 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 // want these to be as small/large as possible without hitting the hard stop
 // for max range. You'll have to tweak them as necessary to match the servos you
 // have!
-#define SERVOMIN  120 // this is the 'minimum' pulse length count (out of 4096)
-#define SERVOMAX  560 // this is the 'maximum' pulse length count (out of 4096)
+//#define SERVOMIN  130 // this is the 'minimum' pulse length count (out of 4096) for the HD-1800A servo
+//#define SERVOMAX  560 // this is the 'maximum' pulse length count (out of 4096) for the HD-1800A servo
+
+#define SERVOMIN  0 // this is the 'minimum' pulse length count (out of 4096) for the SM-S4303R continuous rotation servo
+#define SERVOMAX  380 // this is the 'minimum' pulse length count (out of 4096) for the SM-S4303R continuous rotation servo
+
+int pulselength_0   = map(0,   0, 180, SERVOMIN, SERVOMAX);
+int pulselength_45  = map(45,  0, 180, SERVOMIN, SERVOMAX);
+int pulselength_90  = map(90,  0, 180, SERVOMIN, SERVOMAX);
+int pulselength_135 = map(135, 0, 180, SERVOMIN, SERVOMAX);
+int pulselength_160 = map(160, 0, 180, SERVOMIN, SERVOMAX);
+int pulselength_180 = map(180, 0, 180, SERVOMIN, SERVOMAX);
 
 void setup() {
   Serial.begin(9600);
-  Serial.println("16 channel Servo test!");
-
   pwm.begin();
   
   pwm.setPWMFreq(60);  // Analog servos run at ~60 Hz updates
@@ -78,16 +86,30 @@ void setup() {
 
 void loop() {
   // Drive each servo one at a time
-  Serial.println(servonum);
-  for (uint16_t pulselen = SERVOMIN; pulselen < SERVOMAX; pulselen++) {
-    pwm.setPWM(1, 0, pulselen);
-    pwm.setPWM(2, 0, pulselen);
-  }
-  delay(500);
-  for (uint16_t pulselen = SERVOMAX; pulselen > SERVOMIN; pulselen--) {
-    pwm.setPWM(1, 0, pulselen);
-    pwm.setPWM(2, 0, pulselen);
-  }
-  delay(500);
+//  Serial.println(servonum);
+// use pulselength = map(degrees, 0, 180, SERVOMIN, SERVOMAX); to convert degrees to pulse length
+//  for (uint16_t pulselen = SERVOMIN; pulselen < SERVOMAX; pulselen++) {
+//    Serial.println(pulselen);
+//    pwm.setPWM(0, 0, pulselen);
+////    delay(100);
+//  }
+//  delay(500);
+//  for (uint16_t pulselen = SERVOMAX; pulselen > SERVOMIN; pulselen--) {
+//    pwm.setPWM(0, 0, pulselen);
+//  }
+//  delay(500);
 
+// Uncomment the following lines to make the servo move to specific positions
+//  pwm.setPWM(0, 0, pulselength_0);  // Turn servo to 0 degrees (make pulselength 1 for a CRS - this will make it turn CCW at top speed)
+//  delay(500);
+//  pwm.setPWM(0, 0, pulselength_45);  // Turn servo to 45 degrees (if using a CRS, it will turn CCW at medium speed)
+//  delay(500);
+//  pwm.setPWM(0, 0, pulselength_90);  // Turn servo to 45 degrees (if using a CRS, it will stop)
+//  delay(500);
+//  pwm.setPWM(0, 0, pulselength_135);  // Turn servo to 45 degrees (if using a CRS, it will turn CW at medium speed)
+//  delay(500);
+//  pwm.setPWM(0, 0, pulselength_160);  // Turn servo to 45 degrees (if using a CRS, it will turn CW at higher medium speed)
+//  delay(500);
+//  pwm.setPWM(0, 0, pulselength_180);  // Turn servo to 45 degrees (if using a CRS, it will turn CW at top speed)
+//  delay(500);
 }
