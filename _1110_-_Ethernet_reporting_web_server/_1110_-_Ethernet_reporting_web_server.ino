@@ -44,6 +44,7 @@
  * About the Arduino Ethernet shield v2: https://store.arduino.cc/usa/arduino-ethernet-shield-2
  * About the Arduino Ethernet shield v1: https://www.arduino.cc/en/Main/ArduinoEthernetShieldV1
  * The Ethernet library: https://www.arduino.cc/en/Reference/Ethernet
+ * Learn about HTTP: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol 
  *  
  *  Created on July 4 2017 by Peter Dalmaris
  * 
@@ -92,14 +93,12 @@ void setup() {
   Serial.begin(9600);
   dht.begin();
 
-
   // start the Ethernet connection and the server:
   Ethernet.begin(mac, ip);
   server.begin();
   Serial.print("server is at ");
   Serial.println(Ethernet.localIP());
 }
-
 
 void loop() {
   // listen for incoming clients
@@ -126,7 +125,7 @@ void loop() {
           client.println("<html>");
           // output the value of each analog input pin
 
-            int sensorReading = analogRead(0);
+          int sensorReading = analogRead(0);
           client.print("analog input ");
           client.print(0);
           client.print(" is ");

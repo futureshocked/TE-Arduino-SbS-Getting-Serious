@@ -1,4 +1,4 @@
-/*  1120 - The Ethernet Shield (W5100) simple GET request parser
+/*  1121 - The Ethernet Shield (W5100) simple GET request parser ONE LED only
  * 
  * This sketch shows you how to create a simple that contains a GET request
  * parser. You can use this parser to turn LEDs on and off.
@@ -6,7 +6,8 @@
  * The sketch also creates a simple web form that displays buttons in the
  * client's web browser.
  * 
- * The sketch can parse multiple value pairs.
+ * This sketch supports only one LED, and is a simpler version of the multiple-led
+ * sketch from the previous lecture (sketch 1120).
  * 
  * 
  * 
@@ -44,6 +45,7 @@
  * Learn about the String class: https://www.arduino.cc/en/Reference/StringObject
  *  
  *  Created on July 4 2017 by Peter Dalmaris
+ *  
  * 
  */
 
@@ -148,28 +150,17 @@ String parseGetRequest(String &str) {
   Serial.print(" Parsing this string:");
   Serial.println(str);
   boolean searching = true;
-  int current_index = 0;
+  
   String return_message = "";
-  while(searching==true)
-  {
-  int   led_index    = str.indexOf("led", current_index);
-  int   equal_index  = str.indexOf("=", current_index);
+  
+  int   led_index    = str.indexOf("led");
+  int   equal_index  = str.indexOf("=");
   int   led_pin      = str.substring(led_index+3,equal_index).toInt();      // Find the substring that contains the pin number,
                                                                             // and convert it into an int    
-  // ** Multiple value pair parsing **                                                                          
-  // If we have multiple value pairs, we need to find out the next "led" string so that we can
-  // go back and extract the value for the current led.
-  // If there is no next "led" then look for end of line.
-  int   led_val = 0;
-  if (str.indexOf("led", equal_index)>0) // If the "led" string can't be found in the str, the index is -1
-  {                                                                                    
-     led_val      = str.substring(equal_index+1,str.indexOf("led", equal_index)-1).toInt();
-  } else
-  {
-    led_val      = str.substring(equal_index+1,str.length()).toInt();
-      searching = false;
-  }
-  current_index = equal_index + 1;
+  // ** Single value pair parsing **                                                                          
+  int   led_val      = str.substring(equal_index+1,str.length()).toInt(); // Find the substring that contains the value,
+                                                                            // and convert it into an int                                                                            
+  
   //Show the substring indexes and values for debugging
   Serial.print("led_index, equal_index, led_pin, led_val, searching: ");
   Serial.print(led_index);
@@ -188,7 +179,7 @@ String parseGetRequest(String &str) {
   return_message        += led_val;
   return_message        += "\n";
   executeInstruction(led_pin, led_val);
-  }
+  
   return return_message;
 }
 

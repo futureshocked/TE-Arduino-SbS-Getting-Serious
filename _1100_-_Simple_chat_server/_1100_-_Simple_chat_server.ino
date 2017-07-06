@@ -36,8 +36,11 @@
  * About the Arduino Ethernet shield v2: https://store.arduino.cc/usa/arduino-ethernet-shield-2
  * About the Arduino Ethernet shield v1: https://www.arduino.cc/en/Main/ArduinoEthernetShieldV1
  * The Ethernet library: https://www.arduino.cc/en/Reference/Ethernet
+ * Learn about IP networks: https://en.wikipedia.org/wiki/Internet_Protocol#IP_addressing_and_routing
+ * Learn about Ethernet networks: https://en.wikipedia.org/wiki/Ethernet 
  *  
  *  Created on July 4 2017 by Peter Dalmaris
+ *  
  * 
  */
 /*
