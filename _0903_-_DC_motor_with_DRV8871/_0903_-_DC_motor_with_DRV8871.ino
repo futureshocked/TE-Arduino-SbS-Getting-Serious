@@ -49,7 +49,7 @@ bool direction = HIGH;  // Start the motor by moving it towards one direction. W
 void setup() 
 { 
     pinMode(direction1, OUTPUT);  
-    pinMode(speed1, OUTPUT);  
+    pinMode(speed1, OUTPUT); 
 } 
  
 void loop() 
