@@ -69,7 +69,7 @@
  * send text back to the Arduino. To quit screen, type Ctr-A followed by 
  * Ctr-B.
  * 
- * On Windows, you can use a utiliry like Putty.
+ * On Windows, you can use a utility like Putty.
  *        
  *  Created on October 16 2017 by Peter Dalmaris
  * 
