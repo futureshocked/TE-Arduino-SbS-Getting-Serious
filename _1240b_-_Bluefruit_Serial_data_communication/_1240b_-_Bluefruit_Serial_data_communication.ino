@@ -272,6 +272,7 @@ void loop(void)
         {
           Serial.print("Sensor reading: ");
           Serial.println(analogRead(0));
+          ble.print(analogRead(0));
         }
         
      }

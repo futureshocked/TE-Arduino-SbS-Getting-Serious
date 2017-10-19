@@ -79,9 +79,9 @@
 
 #include "BluefruitConfig.h"
 
-int redPin= 5;
-int greenPin = 4;
-int bluePin = 3;
+int redPin   = 5;
+int greenPin = 6;
+int bluePin  = 3;
 
 #if SOFTWARE_SERIAL_AVAILABLE
   #include <SoftwareSerial.h>

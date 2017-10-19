@@ -214,6 +214,7 @@ void setup(void)
 /**************************************************************************/
 void loop(void)
 {
+  char keys[BUFSIZE+1];
   // Display prompt
   Serial.print(F("keyboard > "));
   String message = "msecs since start: "; 
