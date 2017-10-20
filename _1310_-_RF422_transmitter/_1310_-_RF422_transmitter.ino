@@ -1,35 +1,86 @@
-
-
-//
-// Simple example of how to use VirtualWire to transmit messages
+/*  1310b - RF422 transmitter
+ *   
+ * This sketch will transmit the "hello" message to the receiver, using 
+ * a low-cost 422Mhz radio module.
+ * 
+ * 
+ * 
+ * This sketch was adapted by Peter Dalmaris for Arduino Step by Step from the 
+ * original that ships with the Radiohead library.
+ * 
+ * Components
+ * ----------
+ *  - Arduino Uno
+ *  - 433MHz transmitter XY-FST
+ *  - Jumper wires
+ *  - 1 x LED
+ *  - 1 x 330 Ohm resistor
+ *  
+ *  Libraries
+ *  ---------
+ *  - VirtualWire
+ *
+ * Connections
+ * -----------
+ * Arduino Uno and XY-FST:
+ *  
+ *  Arduino Uno   |      XY-FST
+ *  ------------------------------
+ *        5V      |       VCC
+ *        GND     |       GND
+ *        12      |       RX
+ *               
+ *  For documentation, please see http://www.airspayce.com/mikem/arduino/RadioHead/index.html        
+ *  
+ *  Created on October 20 2017 by Peter Dalmaris, Tech Explorations, txplore.com
+ * 
+ */
+// ask_transmitter.pde
+// -*- mode: C++ -*-
+// Simple example of how to use RadioHead to transmit messages
+// with a simple ASK transmitter in a very simple way.
 // Implements a simplex (one-way) transmitter with an TX-C1 module
-//
-// See VirtualWire.h for detailed API docs
-// Author: Mike McCauley (mikem@airspayce.com)
-// Copyright (C) 2008 Mike McCauley
-// $Id: transmitter.pde,v 1.3 2009/03/30 00:07:24 mikem Exp $
+#include <RH_ASK.h>
+#include <SPI.h> // Not actualy used but needed to compile
 
-#include <VirtualWire.h>
+const int ledPin = 7;
+const int tx_pin = 12;
+
+// Create the transmitter object.
+// Even though this example ciruit only includes a transmitter, we still
+// need to provide a pin allocation for the receiver. In the example,
+// I allocate pin 12 to the receiver and transmitter in order to not
+// waste an Arduino pin that will not actually be used. If you decide
+// to attach a receiver, change the receiver pin to the actual pin used
+// by the receiver. 
+// The constructor parameters are:
+// speed, rxPin, txPin, pttPin, and pttInverted (see documentation for 
+// description of pin roles).
+RH_ASK driver(2000, 12, tx_pin, 10); 
 
 void setup()
 {
-    Serial.begin(9600);    // Debugging only
-    Serial.println("setup");
+    Serial.begin(9600);  // Debugging only
+    
+    if (!driver.init())
+         Serial.println("init failed");
 
-    // Initialise the IO and ISR
-    vw_set_tx_pin(12);
-    vw_setup(2000);  // Bits per sec
-    Serial.println("done");
+    pinMode(ledPin, OUTPUT);
+
+    // set initial LED state
+    digitalWrite(ledPin, LOW);
+
+    Serial.println("Transmitter started");   
 }
 
 void loop()
 {
     const char *msg = "hello";
     Serial.println("t");
-    digitalWrite(13, true); // Flash a light to show transmitting
-    vw_send((uint8_t *)msg, strlen(msg));
-    vw_wait_tx(); // Wait until the whole message is gone
-    digitalWrite(13, false);
+    digitalWrite(ledPin, HIGH); // Flash a light to show transmitting
+    driver.send((uint8_t *)msg, strlen(msg));
+    driver.waitPacketSent();
+    digitalWrite(ledPin, LOW);
     Serial.println("x");
-    delay(300);
+    delay(500);
 }
