@@ -1,0 +1,1103 @@
+//////////////////////////////////////////////////////////////
+//															//
+// Tech Explorations Arduino Step by Step Getting Serious.  //
+// Links to external resources								//
+// This file contains all links to sketches and other 		//
+// online resources from the course lectures.				//
+// Feel free to download this files, however you must		//
+// maintain this header.									//
+//															//
+// This file is subject to frequent updates.				//
+// 															//
+// Created by Peter Dalmaris.								//
+// Last updated on October 28 2017							//
+// Copyright Tech Explorations(R)	txplore.com				//
+//															//
+//////////////////////////////////////////////////////////////
+
+0490a
+-----
+* Product page: txplo.re/bme280
+
+0490b
+-----
+* Sketch: txplo.re/asbs490
+
+0490c
+-----
+* Sketch: txplo.re/asbs490
+
+0490d
+-----
+* Sketch: txplo.re/asbs490
+
+0540a
+-----
+* Learn about the gyroscope: txplo.re/gyro
+* Learn about the accelerometer: txplo.re/accel
+
+0540b
+-----
+* Datasheet: txplo.re/mpu6050
+
+0540c
+-----
+-
+
+0540d
+-----
+* Sketch: txplo.re/giti2c
+
+
+0540e
+-----
+* Processing: processing.org
+* Processing examples: txplo.re/tlibs 
+
+0580
+----
+* Learn more about the Reed switch: txplo.re/reed
+* Sketch: txplo.re/c42f
+
+0590a
+-----
+* Datasheet: txplo.re/9fbf
+
+0590b
+-----
+-
+
+0590c
+-----
+* Sketch: txplo.re/hmc5883
+* Find the magnetic declination at your location: magnetic-declination.comt
+
+0590d
+-----
+-
+
+0620a
+-----
+* Manus Glove: manus-vr.com
+* Flex sensor datasheet: txplo.re/flex
+
+0620b
+-----
+-
+
+0620c
+-----
+* Sketch: txplo.re/gsr620
+
+0630a
+-----
+* Membrane potentiometer datasheet: txplo.re/membrane
+
+0630b
+-----
+* Sketch: txplo.re/gsr630
+
+0640a
+-----
+* PEC11 12mm Rotary Encoder datasheet: txplo.re/gsr640
+
+0640b
+-----
+* Encoder library: txplo.re/enclib
+
+
+0640c
+-----
+* Sketch 1: txplo.re/enc1
+* Sketch 2: txplo.re/enc2
+
+
+0670a
+-----
+-
+
+0670b
+-----
+-
+
+0670c
+-----
+* Sketch: txplo.re/key1
+
+0670d
+----
+* Skech: txplo.re/key1
+
+0680a
+-----
+-
+
+0680b
+-----
+-
+
+0680c
+-----
+* OneWireKeypad library: txplo.re/1wirekey
+* Sketch: txplo.re/asbs680
+* Learn about resistor tolerance: txplo.re/2cbitGG
+* Learn about ghosting: txplo.re/ghosting
+
+0690a
+-----
+* MM74C922 datasheet: txplo.re/mm74c922
+
+0690b
+-----
+* Learn about decoupling capacitors: txplo.re/decouple
+
+0690c
+-----
+* Sketch: txplo.re/asbs690
+
+0690d
+-----
+-
+
+0730a
+-----
+* Product page: txplo.re/tft18
+* Sketch: txplo.re/asbs730
+
+0730b
+-----
+* Adafruit GFX Graphics Library documentation: txplo.re/751e
+
+0730c
+-----
+-
+
+0730d
+-----
+-
+
+0730e
+-----
+-
+
+0732a
+-----
+-
+
+0732b
+-----
+-
+
+0732c
+-----
+* Sketch: txplo.re/asbs732
+
+0732d
+-----
+* Sketch: txplo.re/asbs732
+
+0732e
+-----
+* Adafruit ILI9340 library on Github: txplo.re/ILI9340
+
+0735a
+-----
+* Product page: txplo.re/ada1947
+
+0735b
+-----
+* Sketch: txplo.re/asbs735
+
+0735c
+-----
+* Adafruit GFX Graphics Library documentation: txplo.re/751e
+
+0735d
+-----
+-
+
+0735e
+-----
+-
+
+0735f
+-----
+* Online file format converter: convertio.co
+
+0735g
+-----
+* Sketch: txplo.re/asbs735
+
+0740a
+-----
+-
+
+0740b
+-----
+-
+
+0740c
+-----
+* Sketch: txplo.re/asbs740
+* u8glib library on Github: txplo.re/u8glib
+* u8g2 library reference: txplo.re/u8g2ref
+* u8g2 fonts: txplo.re/u8g2fonts
+
+0740d
+-----
+* Sketch: txplo.re/asbs740
+
+0750a
+-----
+-
+
+0750b
+-----
+-
+
+0750c
+-----
+-
+
+0750d
+-----
+* Sketch: txplo.re/asbs750
+
+0750e
+-----
+-
+
+0752a
+-----
+-
+
+0752b
+-----
+* Sketch: txplo.re/asbs752
+
+0753a
+-----
+-
+
+0753b
+-----
+-
+
+0753c
+-----
+* Sketch: txplo.re/asbs753
+
+0754a
+-----
+* Datasheet for the 74HC595 IC: txplo.re/76hc595
+
+0754b
+-----
+-
+
+0754c
+-----
+* Sketch: txplo.re/asbs754
+* Learn more about shiftOut: txplo.re/shiftout
+
+0755a
+-----
+-
+
+0755b
+-----
+-
+
+0755c
+-----
+-
+
+0755d
+-----
+* Sketch: txplo.re/asbs755
+* Learn more about the problem with delay(): txplo.re/delay
+
+0755e
+-----
+-
+
+0757a
+-----
+* Product page: txplo.re/ada880
+
+0757b
+-----
+* Sketch: txplo.re/asbs757
+* Adafruit LED Backpack library: txplo.re/ledbpgh
+
+0757c
+-----
+* Sketch: txplo.re/asbs757
+
+0760a
+-----
+* Sketch: txplo.re/asbs740
+* u8g2 fonts: txplo.re/u8g2fonts
+* u8g2 library reference: txplo.re/u8g2ref
+
+0760b
+-----
+-
+
+0760c
+-----
+* Sketch: txplo.re/asbs760
+
+0760d
+-----
+* Sketch: txplo.re/asbs760
+
+0760e
+-----
+* Sketch: txplo.re/asbs760
+
+0760f
+-----
+* Sketch: txplo.re/asbs760
+
+0770a
+-----
+* Sketch: txplo.re/asbs770
+
+0770a
+-----
+* Sketch for quad 4x4 matrix display: txplo.re/asbs770
+* Sketch for single 8x8 matrix display: txplo.re/asbs760
+* MAX72xx library on Github: txplo.re/max72
+* Adafruit GFX library on Github: txplo.re/adagfx
+
+0810a
+-----
+-
+
+0810b
+-----
+* TIP122 datasheet: txplo.re/tip122
+
+0810c
+-----
+-
+
+0810d
+-----
+-
+
+0810e
+-----
+* Sketch: txplo.re/asbs810
+
+0810f
+-----
+* Sketch: txplo.re/asbs811
+
+0820a
+-----
+-
+
+0820b
+-----
+-
+
+0820c
+-----
+-
+
+0820d
+-----
+* Sketch: txplo.re/asbs820
+* Learn more about the randomSeed function: txplo.re/randomseed
+
+0830a
+-----
+* Product page: txplo.re/adafr3e08
+* NeoMatrix library: txplo.re/neolib
+* Adafruit GFX Graphics Library: txplo.re/751e
+* NeoMatrix Library on Github: txplo.re/adanmlib
+* Neopixel library on Github: txplo.re/adanplib
+
+0830b
+-----
+-
+
+0830c
+-----
+* Sketch: txplo.re/asbs830
+
+0830d
+-----
+-
+
+0840a
+-----
+* Product page: txplo.re/ada1426
+* Neopixel Überguide: txplo.re/npuber
+
+0840b
+-----
+* Sketch: txplo.re/asbs840
+
+0840c
+-----
+-
+
+0840d
+-----
+* Sketch: txplo.re/asbs840
+
+0850a
+-----
+* Product page: txplo.re/ada1376
+
+0850b
+-----
+* NeoPixel Überguide: txplo.re/npuber
+
+0850c
+-----
+* Sketch: txplo.re/asbs850
+
+0850d
+-----
+* Sketch: txplo.re/asbs850
+
+0899
+-----
+* Learn about torque: txplo.re/torque
+
+0900a
+-----
+-
+
+0900b
+-----
+* Datasheet for the L293x motor drivers: txplo.re/L293
+
+0900c
+-----
+* Sketch: txplo.re/asbs900
+
+0903a
+-----
+* DRV8871 product page: txplo.re/drv8871
+* L293N datasheet: http://txplo.re/L293
+
+0903b
+-----
+-
+
+0903c
+-----
+* Sketch: txplo.re/asbs903
+
+0910a
+-----
+* Product page: txplo.re/ada1438
+
+0910b
+-----
+-
+
+0910c
+-----
+* Sketch: txplo.re/asbs910
+* Learn about pointers: txplo.re/2fDHb4P
+
+0930a
+-----
+-
+
+0932a
+-----
+-
+
+0932b
+-----
+* Sketch: txplo.re/asbs932
+
+0932c
+-----
+* Sketch: txplo.re/asbs932
+
+0933
+----
+* Sketch: txplo.re/asbs933
+
+0940
+----
+* Sketch: txplo.re/asbs940
+
+0945a
+----
+* Product page: txplo.re/ada1441
+
+0945b
+----
+-
+
+0945c
+----
+* Sketch: txplo.re/asbs945
+* PWM Servo Driver Library: txplo.re/githu4668
+* 16-ch PWM servo shield guide: txplo.re/adapwmL
+* Learn about the map() function: txplo.re/2giKeky
+
+0945d
+----
+- 
+
+0950a
+-----
+* About stepper motors: txplo.re/stepper
+
+0950b
+-----
+-
+
+0950c
+-----
+-
+
+0952a
+-----
+* Sketch: txplo.re/asbs952
+* L293 datasheet: txplo.re/L293
+
+0952b
+-----
+* Sketch: txplo.re/asbs952
+* Stepper library documentation: txplo.re/ardstep
+
+0970a
+-----
+* Learn about microstepping: txplo.re/mstep
+* Product page: txplo.re/easydrv
+
+0970b
+-----
+* Sketch: txplo.re/asbs970
+
+0970c
+-----
+-
+
+0972a
+-----
+* Sketch: txplo.re/asbs972
+
+0972b
+-----
+* Sketch: txplo.re/asbs973
+
+0975a
+-----
+* Sketch: txplo.re/asbs975
+* Motor Shield library header file: txplo.re/adamsh
+
+0975b
+-----
+-
+
+0980a
+-----
+* Stepper motors: txplo.re/stepper
+
+0980b
+-----
+* 28BJY-48 datasheet: txplo.re/28BJY48sh
+
+0980c
+-----
+* Sketch: txplo.re/asbs982
+
+0982a
+-----
+* ULN2003 datasheet: txplo.re/ULN2003
+
+0982b
+-----
+* Sketch: txplo.re/asbs980
+
+0982c
+-----
+* Sketch 1: txplo.re/asbs980
+* Sketch 2: txplo.re/asbs981
+
+1100a
+-----
+-
+
+1100b
+-----
+* Learn about the Ethernet switch: txplo.re/ethsw
+* Ethernet Shield V1: txplo.re/eth1
+* Ethernet Shield V2: txplo.re/ethv2
+
+1101a
+-----
+-
+
+1101b
+-----
+* Sketch: txplo.re/asbs1100
+
+1101c
+-----
+* Sketch: txplo.re/asbs1100
+* Learn about gateways: txplo.re/gateway
+* Learn about IP subnets: txplo.re/subnet
+* List of default TCP ports: txplo.re/tcpports
+* Ethernet library documentation: txplo.re/ardethdoc
+
+1102a
+-----
+-
+
+1102b
+-----
+* Sketch: txplo.re/asbs1101
+
+1110a
+-----
+* Learn about port forwarding: txplo.re/portfwd
+
+1110b
+-----
+* Skeetch: txplo.re/asbs1110
+* Learn about HTTP: txplo.re/http
+* Sketch: txplo.re/asbs1110
+
+1110c
+-----
+* Learn about HTTP: txplo.re/http
+
+1110d
+-----
+* Learn more about the new line characters: txplo.re/NL
+
+1111
+----
+* Sketch: txplo.re/asb1111
+
+1120a
+-----
+-
+
+1120b
+-----
+* Sketch: txplo.re/asbs1120
+* Learn about HTTP on Wikipedia: txplo.re/http
+* Learn about String indexOf() function: txplo.re/indexof
+* Learn about the String to Int function: txplo.re/strtoint
+
+1121
+----
+* Sketch: txplo.re/asbs1121
+
+1210a
+-----
+* Module product page: txplo.re/atwinc1500
+
+1210b
+-----
+-
+
+1210c1
+-----
+-
+
+1210c2
+-----
+* Learn about the WiFi101 library: txplo.re/wifi101lib
+
+1210c3
+-----
+-
+
+1210d1
+------
+-
+
+1210d2
+------
+-
+
+1210e1
+------
+-
+
+1210e2
+------
+* Sketch: txplo.re/asbs1210
+* WiFi101 library documentation: txplo.re/wifi101lib
+
+1210e3
+------
+-
+
+1211a
+-----
+-
+
+1211b
+-----
+* Amazon S3 storage service: aws.amazon.com/s3/
+* Sketch: txplo.re/asbs1211bp
+
+1211c
+-----
+-
+
+1211d
+-----
+* Sketch: txplo.re/asbs1211
+
+1212a
+-----
+* Sketch: txplo.re/asbs1212
+
+1212b
+-----
+* Sketch: txplo.re/asbs1212
+
+1218a1
+------
+-
+
+1218a2
+------
+-
+
+1218a3
+------
+* Sketch: txplo.re/asbs1218a
+
+
+1218b1
+------
+* Sketch: txplo.re/asbs1218b
+
+1218c1
+------
+* Sketch: txplo.re/asbs1218c
+
+1230a
+-----
+* BLE on Wikipedia: txplo.re/BLE
+
+1230b
+-----
+* BT GATT specifications: txplo.re/BTGATT
+
+1230c
+-----
+* Adafruit nRF8001 library: txplo.re/adanRF8001
+* nRF Toolbox app iOS: txplo.re/iosnRFConnect
+* nRF Toolbox app Android: txplo.re/androidnRFConnect
+* Adafruit Bluefruit LE Connect app iOS: txplo.re/adaiOSConnect
+* Adafruit Bluefruit LE Connect app Android: txplo.re/adaAndConnect
+* Product page: txplo.re/tft18
+
+1230d
+-----
+-
+
+1230e
+-----
+-
+
+1240a
+-----
+* Product page: txplo.re/adaBLEfrd
+* Bluetooth GATT services: txplo.re/gatts68f2
+
+1240b
+-----
+-
+
+1240c
+-----
+* Sketch: txplo.re/asbs1240a
+
+1240d
+-----
+-
+
+1240e
+-----
+* Haeys command set on Wikipedia: txplo.re/hyesat
+* Learn more about useful AT commands: txplo.re/comma2fc7
+
+1240f1
+------
+-
+
+1240f2
+------
+* Sketch: txplo.re/asbs1240b
+
+
+1240g1
+------
+* Sketch: txplo.re/asbs1240c
+
+1240g2
+------
+-
+
+1240gh2
+------
+* Sketch: txplo.re/asbs1240d
+
+
+1300a
+-----
+-
+
+1300b
+-----
+* Order your adaptor from OSHPark: txplo.re/oshrf24
+
+1300c
+-----
+-
+
+1300d
+-----
+* Receiver sketch: txplo.re/asbs1300a1
+* Transmitter sketch: txplo.re/asbs1300a2
+* nRF24 library documentation: txplo.re/optim8a28
+
+
+1300e
+-----
+-
+
+1300f
+-----
+* Node 1 sketch: txplo.re/asbs1300b
+* Node 2 sketch: txplo.re/asbs1300c
+
+
+1300g
+-----
+* Node 1 sketch: txplo.re/asbs1300b
+* Node 2 sketch: txplo.re/asbs1300c
+* Software debouncing: txplo.re/ardui18f8
+
+1301a
+-----
+-
+
+1301b
+-----
+-
+
+1301c
+-----
+* RadioHead library home page: txplo.re/radiohead
+* Transmitter sketch: txplo.re/asbs1310b
+* Receiver sketch: txplo.re/asbs1300a1
+
+1301d
+-----
+-
+
+1410a
+-----
+* Sketch: txplo.re/asbs1410a
+
+1410b
+-----
+* Sketch: txplo.re/asbs1410b
+
+1410c
+-----
+* Sketch: txplo.re/asbs1410c
+
+1420a
+-----
+* Sketch: txplo.re/asbs1420a
+
+1420b
+-----
+* Sketch: txplo.re/asbs1420b
+
+1420c
+-----
+* Sketch: txplo.re/asbs1420c
+
+1420d
+-----
+* Sketch: txplo.re/asbs1420d
+
+1430
+----
+* Sketch: txplo.re/asbs1430
+
+1500a
+----
+* Sketch: txplo.re/asbs1500a
+
+1500b
+----
+* Sketch: txplo.re/asbs1500b
+
+1500c
+----
+* Sketch: txplo.re/asbs1500c
+
+1500d
+----
+* Sketch: txplo.re/asbs1500d
+
+1500e
+----
+* Sketch: txplo.re/asbs1500e
+
+1500f
+----
+* Sketch: txplo.re/asbs1500f
+
+1520a
+-----
+* Sketch: txplo.re/asbs1520a
+
+1520b
+-----
+* Sketch: txplo.re/asbs1520b
+
+1610
+-----
+* Sketch: txplo.re/asbs1610
+
+1620
+-----
+* Sketch: txplo.re/asbs1620
+
+1810
+-----
+* Sketch: txplo.re/asbs1810
+
+1820 
+----
+* Learn more about FIFO: txplo.re/fifo
+
+1821a
+-----
+* SNx4HC595 shift register datasheet: txplo.re/76hc595
+
+1821b
+-----
+-
+
+1821c
+-----
+* Sketch: txplo.re/asbs1821
+* Learn about random() and randomSeed(): txplo.re/random
+* Learn about shiftOut: txplo.re/shiftout
+
+1821d
+-----
+-
+
+1823a
+-----
+-
+
+1823b
+-----
+-
+
+1823c
+-----
+* Sketch: txplo.re/asbs1823
+* Learn more about the SN74ALS166: txplo.re/9e54
+
+1850a
+-----
+* Sketch: txplo.re/asbs1850a
+
+1850b
+-----
+* Sketch: txplo.re/asbs1850b
+
+1850c
+-----
+* Sketch: txplo.re/asbs1850c
+
+1850d
+-----
+* Sketch: txplo.re/asbs1850d1
+* Sketch: txplo.re/asbs1850d2
+
+1850e
+-----
+* Sketch: txplo.re/asbs1850e
+
+
+1850f
+-----
+* Sketch: txplo.re/asbs1850f
+
+2100a
+-----
+* Sketch: txplo.re/asbs2100a
+
+2100b
+-----
+* Sketch: txplo.re/asbs2100b
+
+2100c
+-----
+* Sketch: txplo.re/asbs2100c
+
+2100d
+-----
+* Sketch: txplo.re/asbs2100d
+
+2110
+-----
+* Sketch: txplo.re/asbs2110
+
+2140a
+-----
+* Sketch: txplo.re/asbs2140a
+
+2140a
+-----
+* Sketch: txplo.re/asbs2140a
+
+2140b
+-----
+* Sketch: txplo.re/asbs2140b
+
+2140c
+-----
+* Sketch: txplo.re/asbs2140c
+
+2420a
+-----
+* Sketch: txplo.re/asbs2420a
+
+2420b
+-----
+* Sketch: txplo.re/asbs2420b
+
+2500
+-----
+* Sketch: txplo.re/asbs2500
+
+2500a
+-----
+* Sketch: txplo.re/asbs2500a
+
+2500b
+-----
+* Sketch: txplo.re/asbs2500b
+
+
