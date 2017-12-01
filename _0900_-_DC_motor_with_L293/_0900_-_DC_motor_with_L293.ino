@@ -65,10 +65,10 @@ void loop()
 //    analogWrite(speed2, 150);             // PWM Speed Control motor 2
 //    delay(1000); 
 //    analogWrite(speed1, 100);             // PWM Speed Control motor 1
-//    analogWrite(speed1, 200);             // PWM Speed Control motor 2
+//    analogWrite(speed2, 200);             // PWM Speed Control motor 2
 //    delay(1000); 
 //    analogWrite(speed1, 150);             // PWM Speed Control motor 1
-//    analogWrite(speed1, 255);             // PWM Speed Control motor 2
+//    analogWrite(speed2, 255);             // PWM Speed Control motor 2
 //    delay(1000); 
 //    
 //    direction = !direction;               // Switch direction
