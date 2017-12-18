@@ -196,7 +196,7 @@ void loop()
    // Because this function can only process char arrays, we use the dtostrf function to convert floats into char arrays.
    char t_result[6];               // Buffer big enough for 5-character float plus the array end character
    dtostrf(t, 5, 2, t_result);     // Learn more about dtostrf: txplo.re/dtostrf
-                                    // This function will convert the float stored in "t" to a char array stored in "t_results".
+                                   // This function will convert the float stored in "t" to a char array stored in "t_results".
 
    char h_result[6];               // As above, but for the humidity.
    dtostrf(h, 5, 2, h_result);
@@ -204,12 +204,14 @@ void loop()
    char p_result[5];               // As above, but for the pressure.
    dtostrf(pressure, 5, 0, p_result);
 
-   char payload_message[20];         // Prepare the char array in which the sprintf function will construct the message.
-                                     // Be careful to allow enough space in the array to hold the full message. But not too
-                                     // much as RAM on the Arduino Uno is limited.
-                                     // If you allocated too much RAM, your Arduino may crush without any warning or indication of the cause.   
+   char payload_message[20];       // Prepare the char array in which the sprintf function will construct the message.
+                                   // Be careful to allow enough space in the array to hold the full message. But not too
+                                   // much as RAM on the Arduino Uno is limited.
+                                   // If you allocated too much RAM, your Arduino may crush without any warning or indication of the cause.   
 
    sprintf(payload_message, "%s,%s,%s,%i", t_result, h_result,p_result,location_id);  // Construct the payload and store it in payload_message
+                                                                                      // Learn more about sprintf: txplo.re/sprintf
+                                                                                      // Learn more about printf: txplo.re/printf
 
 //    char buffer[data.length()];               // Uncommend these two lines if you used the String method from above.
 //    data.toCharArray(buffer,data.length()+1); //Adding "1" to the string length to avoid trancating the last character.
