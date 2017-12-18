@@ -23,6 +23,7 @@
  *  - Helium Atom
  *  - LED
  *  - 330 Ω resistor for the LED
+ *  - 10 kΩ pull-up resistor for the DHT22
  *  
  *  Libraries
  *  ---------
