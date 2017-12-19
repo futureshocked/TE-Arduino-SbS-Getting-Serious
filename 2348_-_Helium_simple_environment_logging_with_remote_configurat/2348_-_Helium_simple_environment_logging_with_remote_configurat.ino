@@ -83,7 +83,7 @@ int32_t location_id = 1;       // This is an id for the Helium Atom. It helps me
                                // particular record originated from. Each Atom can be given its own
                                // ID. Great in case you have lots of Atoms in your network.
 
-#define CHANNEL_NAME "Heroku_Web_app"             // This is the name of the channels that forwards data
+#define CHANNEL_NAME "Heroku_Web_app_csv"             // This is the name of the channels that forwards data
                                                   // to my custom web app on Heroku. If you are simply 
                                                   // testing out Helium, you can replace this with a 
                                                   // Channel name that forwards the data to a requestbin (requestb.in)
@@ -165,9 +165,10 @@ void loop()
   float t = dht.readTemperature();                    // Read the temperature value in Celsius.
                                                       // Use dht.readTemperature(true) to read in Fahrenheit.
 
-  if (isnan(h) || isnan(t)) {                         // If the DHT readings fail, stop the sketch here.
+  if (isnan(h) || isnan(t)) {                         // If the DHT readings fail, write error values in the variables.
     Serial.println(F("Failed to read from DHT sensor!"));
-    return;
+    h = 999;
+    t = 999;
   }
 
   float pressure = bmp.readPressure();               // Read the atmospheric pressure value.
