@@ -83,6 +83,7 @@ int32_t location_id = 1;       // This is an id for the Helium Atom. It helps me
                                // particular record originated from. Each Atom can be given its own
                                // ID. Great in case you have lots of Atoms in your network.
 
+//#define CHANNEL_NAME "HTTP_helium_test"
 #define CHANNEL_NAME "Heroku_Web_app_csv"             // This is the name of the channels that forwards data
                                                   // to my custom web app on Heroku. If you are simply 
                                                   // testing out Helium, you can replace this with a 
