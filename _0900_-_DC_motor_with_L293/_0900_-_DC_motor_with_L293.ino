@@ -1,4 +1,4 @@
-/*  0900 - simple DC motor control with the L293 controller IC
+/*  0900 - simple DC motor control with the L298N controller IC
  * 
  * This sketch shows you how to control tho small 5V DC motors using the L298N controller
  * breakout.
