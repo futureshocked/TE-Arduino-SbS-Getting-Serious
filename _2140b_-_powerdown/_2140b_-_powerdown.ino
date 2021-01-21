@@ -52,6 +52,8 @@ void setup()
   pinMode(wakePin, INPUT);
   pinMode(13,OUTPUT);
   pinMode(wakePin, INPUT_PULLUP);
+  
+  digitalWrite(13,HIGH); // Arduino starts awake
 
   Serial.begin(9600);
 
@@ -70,8 +72,7 @@ void setup()
    * In all but the IDLE sleep modes only LOW can be used.
    */
 
-  attachInterrupt(0, wakeUpNow, LOW); // use interrupt 0 (pin 2) and run function
-                                      // wakeUpNow when pin 2 gets LOW 
+ 
 }
 
 void sleepNow()         // here we put the arduino to sleep
