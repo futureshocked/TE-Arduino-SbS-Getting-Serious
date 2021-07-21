@@ -1,14 +1,50 @@
-/*
-   ASBSGSR_-_2800_-_Infrared_Remote_control_demo
-
-   Demonstrates receiving NEC IR codes with IRrecv to
-   control a red and a green LED.
-*/
+/*  ASBSGSR_-_2800_-_Infrared_Remote_control_demo
+ * 
+ * This sketch Demonstrates receiving NEC IR codes with IRrecv to
+ * control a red and a green LED. 
+ * 
+ * 
+ * 
+ * Components
+ * ----------
+ *  - Arduino Uno
+ *  - an Infrared (IR) receiver and transmitter that are 
+ *  - compatible with the Arduino-IRremote library.
+ *  - Two LEDs
+ *  - Two 330Ohm resistors
+ *  - Jumper wires
+ *  - Mini breadboard
+ *  
+ *  Libraries
+ *  ---------
+ *  Arduino-IRremote: https://github.com/Arduino-IRremote/Arduino-IRremote
+ *
+ * Connections
+ * -----------
+ *  
+ * For the IR receiver: 
+ * 
+ * IR Receiver   |    Arduino
+ * --------------------------
+ *       V+      |      5V
+ *       GND     |      GND
+ *       OUT     |      2
+ * 
+ * For the LEDs: Connect the anode of the red LED (long pin) to Arduino 
+ * digital pin 7, a 330 Ω resistor to the LED’s cathode (short pin) 
+ * and the other pin of the resistor to Arduino GND.
+ * 
+ * Do the same for the green LED, except that the anode should be 
+ * connected to pin 8.
+ *     
+ *  
+ *  Created on July 14 2021 by Peter Dalmaris
+ * 
+ */
 
 #include <IRremote.h>
 
 #define IR_RECEIVE_PIN 2
-
 
 decode_results results;
 #define RED_PIN 7
